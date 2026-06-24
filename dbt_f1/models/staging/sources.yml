@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: f1_raw
+    database: F1_DB
+    schema: F1_DRIVER_DATA
+
+    tables:
+      - name: DRIVERS
+      - name: RACES
+      - name: RESULTS
+      - name: DRIVER_STANDINGS
