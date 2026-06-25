@@ -1,0 +1,58 @@
+.stApp{
+    background:#0E1117;
+    color:#FFFFFF;
+}
+
+section[data-testid="stSidebar"]{
+    background:#151B26;
+}
+
+h1,h2,h3,h4{
+    color:white;
+}
+
+.metric-card{
+    background:#1B2333;
+    border-radius:18px;
+    padding:20px;
+    border:1px solid #2C3446;
+    transition:.3s;
+}
+
+.metric-card:hover{
+    transform:translateY(-3px);
+    border-color:#E10600;
+}
+
+.goat-card{
+    background:linear-gradient(145deg,#1C2333,#252F45);
+    border-radius:20px;
+    padding:25px;
+    border:1px solid #2E3A52;
+}
+
+div[data-testid="stDataFrame"]{
+    border-radius:18px;
+    overflow:hidden;
+}
+
+thead tr th{
+    background:#E10600 !important;
+    color:white !important;
+}
+
+tbody tr{
+    background:#141B25 !important;
+    color:white !important;
+}
+
+tbody tr:hover{
+    background:#1E2736 !important;
+}
+
+.stButton button{
+    background:#E10600;
+    color:white;
+    border-radius:12px;
+    border:none;
+}

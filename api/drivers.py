@@ -1,4 +1,4 @@
-import requests
+from api.common import get_json_with_retry
 
 def get_drivers(season=None, limit=None, offset=None):
     if season:
@@ -12,7 +12,4 @@ def get_drivers(season=None, limit=None, offset=None):
     if offset is not None:
         params["offset"] = offset
 
-    response = requests.get(url, params=params, timeout=30)
-    response.raise_for_status()
-
-    return response.json()
+    return get_json_with_retry(url, params=params)
